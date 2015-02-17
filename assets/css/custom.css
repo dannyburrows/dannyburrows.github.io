@@ -1,0 +1,75 @@
+@media screen and (min-width: 993px) {
+	a.brand-logo {
+		margin-left: 20px;
+	}
+}
+
+.enlarge {
+  background: #555;
+  width: 0;
+  height: 50px;
+  /*z-index: 3;*/
+}
+
+.bold {
+	font-weight: bold;
+	letter-spacing: 0.2em;
+}
+
+/* Navigation edits */
+
+.nav-wrapper {
+	height: 44px !important;
+	line-height: 44px;
+}
+
+li a {
+	width: 100%;
+	line-height: 44px;
+}
+
+.side-nav {
+	max-width: 180px;
+}
+
+ul.side-nav.li:hover {
+    overflow-y: auto;
+}
+
+li.bold {
+	height: 44px;
+}
+
+ul.side-nav li {
+    line-height: 44px;
+}
+
+.mdi-navigation-menu {
+	padding-left: 20px;
+}
+
+.communication {
+	margin-left: 20px;
+}
+
+/* Scrollfire */
+
+#experience {
+	display: none;
+}
+
+/*  */
+.companyLogo {
+	width: 64px;
+	min-width: 36px;
+	height: auto;
+}
+
+.blockquote-list {
+    overflow: hidden;
+    display:none;
+}
+
+.years {
+	color: #0097a7;
+}
