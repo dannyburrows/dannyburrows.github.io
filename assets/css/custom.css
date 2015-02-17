@@ -13,7 +13,7 @@
 
 .bold {
 	font-weight: bold;
-	letter-spacing: 0.2em;
+	letter-spacing: 0.1em;
 }
 
 /* Navigation edits */
@@ -58,6 +58,14 @@ ul.side-nav li {
 	display: none;
 }
 
+#skills {
+	display: none;
+}
+
+#projects {
+	display: none;
+}
+
 /*  */
 .companyLogo {
 	width: 64px;
@@ -72,4 +80,19 @@ ul.side-nav li {
 
 .years {
 	color: #0097a7;
+}
+
+/* skills */
+
+.border-right {
+	border-right: 1px solid #006064 ;
+}
+
+.skillBar {
+	height: 20px;
+	width: 0%;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	background-color: #ff5722;
 }

@@ -1,5 +1,5 @@
 // var options = [
-// 	{selector: '#experience', offset: 200, callback: 'addAnimatedClassFadeIn("#experience")' },
+// 	{selector: '#experience', offset: 100, callback: 'addAnimatedClassFadeIn("#experience")' },
 // ];
 // scrollFire(options);
 
@@ -7,10 +7,9 @@ function addAnimatedClassFadeIn(input) {
 	$(input).addClass('animated fadeInRight');
 }
 
-$(function() {
-	var parentSize = $('.enlarge').parent().width() * .5;
-    $('.enlarge').animate({ width: parentSize + '%' }, 1000, 'linear');
-});
+function grow(elm,width) {
+    elm.animate({ width: width + '%' }, 1000, 'linear');
+};
 
 $(document).ready(function() {
 	$('.blockquote-list').click(function(){
@@ -18,7 +17,7 @@ $(document).ready(function() {
 	});
 });
 
-$(document).on('mouseenter','.company', function(){
+$(document).on('mousedown','.company', function(){
 	// alert($(this).siblings().find('.blockquote-list').attr('id'));
 	// addAnimatedClassFadeIn($(this).siblings().find('.blockquote-list'));
 	var elm = $(this).siblings().find('.blockquote-list')
@@ -40,6 +39,14 @@ $(document).on('mousedown', '.type-toggle', function(){
 	activates.removeClass('fadeOut');
 	activates.delay(400);
 	activates.addClass('animated fadeIn');
+	/* move this out and to another function so i can call each piece individually */
+	if (activates.attr('id') == 'skills') {
+		$('.skillBar').each(function(){
+			$(this).delay(1500);
+			var skillPercent = $(this).attr('skill-percent'); // allows partial completion of columns
+			grow($(this), skillPercent);
+		})
+	}
 });
 
 function hideAll() {
