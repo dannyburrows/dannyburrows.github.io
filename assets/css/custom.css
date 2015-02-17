@@ -4,6 +4,13 @@
 	}
 }
 
+@media screen and (max-width: 480px) {
+	.bold {
+		font-size: 0.9em;
+		letter-spacing: 0.0em;
+	}
+}
+
 .enlarge {
   background: #555;
   width: 0;
@@ -86,6 +93,10 @@ ul.side-nav li {
 
 .border-right {
 	border-right: 1px solid #006064 ;
+}
+
+.border-left {
+	border-left: 1px solid #006064 ;
 }
 
 .skillBar {
