@@ -1,18 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
-		<!--Import materialize.css-->
+		<title>Danny's Bio</title>
 		<link type="text/css" rel="stylesheet" href="assets/css/materialize.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="assets/css/custom.css"  media="screen,projection"/>
 		<link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
-
-		<!--Let browser know website is optimized for mobile-->
+		<meta charset='UTF-16'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	</head>
 
 	<body>
-		<!--Import jQuery before materialize.js-->
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="assets/js/materialize.js"></script>
 		<script type="text/javascript" src="assets/js/custom.js"></script>
@@ -24,14 +21,14 @@
 			<a href="#!" class='brand-logo'>I Am Danny</a>
 			<a href="#" data-activates='side-nav-slider' class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 			<ul class="right hide-on-med-and-down">
-				<li class='bold'><a class='waves-effect type-toggle' data-activates='contact'>Contact</i></a></li>
+				<li class='bold'><a class='waves-effect type-toggle' data-activates='contact'>Contact</a></li>
 				<li class='bold'><a class='waves-effect type-toggle' data-activates='experience'>Experience</a></li>
 				<li class='bold'><a class='waves-effect type-toggle' data-activates='projects'>Projects</a></li>
 				<li class='bold'><a class='waves-effect type-toggle' data-activates='skills'>Skills</a></li>
 				<li class='bold'><a class='waves-effect type-toggle' data-activates='education'>Education</a></li>
 			</ul>
 			<ul class="side-nav" id='side-nav-slider'>
-				<li class='bold'><a class='waves-effect type-toggle' data-activates='contact'>Contact</i></a></li>
+				<li class='bold'><a class='waves-effect type-toggle' data-activates='contact'>Contact</a></li>
 				<li class='bold'><a class='waves-effect type-toggle' data-activates='experience'>Experience</a></li>
 				<li class='bold'><a class='waves-effect type-toggle' data-activates='projects'>Projects</a></li>
 				<li class='bold'><a class='waves-effect type-toggle' data-activates='skills'>Skills</a></li>
@@ -53,7 +50,7 @@
 						<blockquote>
 							<div class='valign-wrapper'><i class='small mdi-hardware-phone-android animated fadeInLeft'></i><div class='communication animated fadeInRight'>623 692 5116</div></div>
 							<div class='valign-wrapper'><i class='small mdi-content-send animated fadeInLeft'></i><div class='communication animated fadeInRight'><a href='mailto:burrows.danny@gmail.com'>burrows.danny@gmail.com</a></div></div>
-							<div class='valign-wrapper'><img id='github' src='assets/images/git.png' class='animated fadeInLeft'><a href='https://www.github.com/dannyburrows' class='communication animated fadeInRight'>github.com/dannyburrows</a></div>
+							<div class='valign-wrapper'><img alt='My github' id='github' src='assets/images/git.png' class='animated fadeInLeft'><a href='https://www.github.com/dannyburrows' class='communication animated fadeInRight'>github.com/dannyburrows</a></div>
 							<div class='valign-wrapper'><i class='small mdi-communication-location-on animated fadeInLeft'></i><div class='communication animated fadeInRight'>Oklahoma City, OK</div></div>
 						</blockquote>
 					</div>
@@ -63,7 +60,7 @@
 						<div class='divider'></div>
 						<br/>
 						<div class='row'>
-							<div class='col s3 externalSite' list-expand='myconsult-list'><img class='responsive-img externalLogo animated fadeInLeft' src='assets/images/myconsulting.gif'></div>
+							<div class='col s3 externalSite' list-expand='myconsult-list'><img alt='MYConsulting logo' class='responsive-img externalLogo animated fadeInLeft' src='assets/images/myconsulting.gif'></div>
 							<div class='col s6 externalSite' list-expand='myconsult-list'><h5 class='flow-text left-align animated fadeInRight'>MY Consulting Group</h5></div>
 							<div class='col s3 externalSite right-align' list-expand='myconsult-list'><div class='years flow-text animated fadeInRight'>2014 - 2015</div></div>
 							<div class='col s12'>
@@ -76,13 +73,13 @@
 							</div>
 						</div>
 						<div class='row'>
-							<div class='col s3 externalSite' list-expand='apmex-list'><img class='responsive-img externalLogo animated fadeInLeft' src='assets/images/apmex.jpg'></div>
+							<div class='col s3 externalSite' list-expand='apmex-list'><img alt='APMEX logo' class='responsive-img externalLogo animated fadeInLeft' src='assets/images/apmex.jpg'></div>
 							<div class='col s6 externalSite' list-expand='apmex-list'><h5 class='flow-text left-align animated fadeInRight'>American Precious Metals Exchange</h5></div>
 							<div class='col s3 externalSite right-align' list-expand='apmex-list'><div class='years flow-text animated fadeInRight'>2014</div></div>
 							<div class='col s12'>
 								<ul id='apmex-list' class='staggeredList'>
 									<li class='flow-text'>&bull; Data analysis of sales and purchasing information of an eCommerce giant</li>
-									<li class='flow-text'>&bull; Identified sales trends and designed forcasting tools</li>
+									<li class='flow-text'>&bull; Identified sales trends and designed forecasting tools</li>
 									<li class='flow-text'>&bull; Maintenance and extension of internal .NET applications</li>
 									<li class='flow-text'>&bull; Data mining using Python, SQL, R</li>
 								</ul>
@@ -90,6 +87,82 @@
 						</div>
 					</div>
 					<!-- Projects -->
+					<div id='projects' class='resumeSection'>
+						<h2 class='animated fadeIn'>Projects</h2>
+						<div class='divider'></div>
+						<br/>
+						<div>
+							<div class='row'>
+								<div class='col s3 externalSite' list-expand='irp-list'><a href='https://apps.occeweb.com/IRPExternal/' target='_blank'><h5 class='bold'>Oklahoma IRP</h5></a></div>
+								<div class='col s6 externalSite' list-expand='irp-list'><div class='flow-text'>VB.NET, MSSQL, WCF</div></div>
+								<div class='col s3 externalSite' list-expand='irp-list'><div class='years flow-text right-align'>2014-2015</div></div>
+								<div class='col s12'>
+									<ul id='irp-list' class='staggeredList'>
+										<li class='flow-text'>&bull; Diagnose bugs in .NET and SQL, with majority of the business logic in stored procedures.</li>
+										<li class='flow-text'>&bull; Create and test bug fixes. Successfully closed over 200 work orders.</li>
+										<li class='flow-text'>&bull; Implemented additional features to allow super users to correct issues without manual scripting.</li>
+										<li class='flow-text'>&bull; Added features as required by IRP mandates, extending the scope of the program.</li>
+										<li class='flow-text'>&bull; Refactoring of code as needed for future maintainability.</li>
+										<li class='flow-text'>&bull; Correct and clean up UI of program to respond better to users and input.</li>
+									</ul>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col s3 externalSite' list-expand='friedokra-list'><a href='https://fried-okra.herokuapp.com/' target='_blank'><h5 class='bold'>Fried Okra Site</h5></a></div>
+								<div class='col s6 externalSite' list-expand='friedokra-list'><div class='flow-text'>Rails, Postgres, Bootstrap</div></div>
+								<div class='col s3 externalSite' list-expand='friedokra-list'><div class='years flow-text right-align'>2014-2015</div></div>
+								<div class='col s12'>
+									<ul id='friedokra-list' class='staggeredList'>
+										<li class='flow-text'>&bull; Site redesign for small business owner.</li>
+										<li class='flow-text'>&bull; Implemented a central social media CMS for one location access.</li>
+										<li class='flow-text'>&bull; Mobile first design using the latest Bootstrap model.</li>
+										<li class='flow-text'>&bull; Integrated multiple APIs into an easy to use interface.</li>
+										<li class='flow-text'>&bull; Hosting platform using Heroku and Amazon Web Services.</li>
+									</ul>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col s3 externalSite' list-expand='webcrawler-list'><h5 class='bold'>Webcrawler</h5></div>
+								<div class='col s6 externalSite' list-expand='webcrawler-list'><div class='flow-text'>Python, VB.NET, WPF, MSSQL</div></div>
+								<div class='col s3 externalSite' list-expand='webcrawler-list'><div class='years flow-text right-align'>2014</div></div>
+								<div class='col s12'>
+									<ul id='webcrawler-list' class='staggeredList'>
+										<li class='flow-text'>&bull; Maintenance and extension of competitor web-crawler.</li>
+										<li class='flow-text'>&bull; Iterates over list of items sold by employer and visits competitor sites downloading pricing information and storing in database for analysis and reporting.</li>
+										<li class='flow-text'>&bull; Scrapes and downloads banners and other special images, creating a PDF and sending an automated email with PDF.</li>
+										<li class='flow-text'>&bull; Follows robots.txt file of each competitor.</li>
+									</ul>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col s3 externalSite' list-expand='scanner-list'><h5 class='bold'>Incoming Scanner</h5></div>
+								<div class='col s6 externalSite' list-expand='scanner-list'><div class='flow-text'>C#, WPF, MSSQL</div></div>
+								<div class='col s3 externalSite' list-expand='scanner-list'><div class='years flow-text right-align'>2014</div></div>
+								<div class='col s12'>
+									<ul id='scanner-list' class='staggeredList'>
+										<li class='flow-text'>&bull; Desktop application to facilitate receiving of shipments and automatically entering information into database.</li>
+										<li class='flow-text'>&bull; Custom error tracking and reporting saw a 90% decrease in scanning errors in the first month of use.</li>
+										<li class='flow-text'>&bull; Automatic detection of carrier information and tracking number verification on scan.</li>
+									</ul>
+								</div>
+							</div>
+							<div class='row'>
+								<div class='col s3 externalSite' list-expand='scheduler-list'><h5 class='bold'>Scheduler</h5></div>
+								<div class='col s6 externalSite' list-expand='scheduler-list'><div class='flow-text'>Python, GAE, MySQL</div></div>
+								<div class='col s3 externalSite' list-expand='scheduler-list'><div class='years flow-text right-align'>2014</div></div>
+								<div class='col s12'>
+									<ul id='scheduler-list' class='staggeredList'>
+										<li class='flow-text'>&bull; Scheduling program that references google calendar and course schedules to determine best times for meetings.</li>
+										<li class='flow-text'>&bull; Command line version implemented in Curses, with a custom Curses module that provides modern-day UI on the command line.</li>
+										<li class='flow-text'>&bull; Designing algorithms to efficiently calculate and process times for all entered users.</li>
+										<li class='flow-text'>&bull; Implemented CLI version of program as a web application using Google App Engine.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+						
+					</div>
 					<!-- Skills -->
 					<div id='skills' class='resumeSection'>
 						<h2 class='animated fadeIn'>Skills</h2>
@@ -239,32 +312,16 @@
 						<div class='divider'></div>
 						<br/>
 						<div class='row'>
-							<div class='col s1 externalSite' list-expand='osu-list'><img class='responsive-img externalLogo animated fadeInLeft' src='assets/images/osu.jpg'></div>
+							<div class='col s1 externalSite' list-expand='osu-list'><img alt='Oregon State Logo' class='responsive-img externalLogo animated fadeInLeft' src='assets/images/OSU.jpg'></div>
 							<div class='col s6 externalSite' list-expand='osu-list'><h5 class='flow-text left-align animated fadeInRight bold'>Oregon State University</h5></div>
 							<div class='col s3 externalSite right-align' list-expand='osu-list'><div class='years flow-text animated fadeInRight'>2013 - 2014</div></div>
 							<div class='col s11 offset-s1 left-align externalSite' list-expand='osu-list'><div class='flow-text animated fadeInRight'>Bachelor of Science: Computer Science</div></div>
-							<div class='col s12'>
-<!-- 								<ul id='osu-list' class='staggeredList'>
-									<li class='flow-text'>&bull; Front and back end .NET developer</li>
-									<li class='flow-text'>&bull; Maintenance of large multi-million dollar application</li>
-									<li class='flow-text'>&bull; Extensive rewriting and optimization of MSSQL queries to enhance system performance</li>
-									<li class='flow-text'>&bull; Create and test bug fixes</li>
-								</ul>
- -->							</div>
 						</div>
 						<div class='row'>
-							<div class='col s1 externalSite' list-expand='asu-list'><img class='responsive-img externalLogo animated fadeInLeft' src='assets/images/asu.jpg'></div>
+							<div class='col s1 externalSite' list-expand='asu-list'><img alt='Arizona State Logo' class='responsive-img externalLogo animated fadeInLeft' src='assets/images/ASU.jpg'></div>
 							<div class='col s6 externalSite' list-expand='asu-list'><h5 class='flow-text left-align animated fadeInRight bold'>Arizona State University</h5></div>
 							<div class='col s3 externalSite right-align' list-expand='asu-list'><div class='years flow-text animated fadeInRight'>2007 - 2011</div></div>
 							<div class='col s11 offset-s1 left-align externalSite' list-expand='asu-list'><div class='flow-text animated fadeInRight'>Bachelor of Science: Psychology</div></div>
-							<div class='col s12'>
-<!-- 								<ul id='asu-list' class='staggeredList'>
-									<li class='flow-text'>&bull; Data analysis of sales and purchasing information of an eCommerce giant</li>
-									<li class='flow-text'>&bull; Identified sales trends and designed forcasting tools</li>
-									<li class='flow-text'>&bull; Maintenance and extension of internal .NET applications</li>
-									<li class='flow-text'>&bull; Data mining using Python, SQL, R</li>
-								</ul>
- -->							</div>
 						</div>
 					</div>
 				</div>
